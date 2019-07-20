@@ -1,0 +1,12 @@
+@mixin image($path, $size: contain, $position: center) {
+	background-image: url('../../static/#{$path}');
+	background-size: $size;
+	background-position: $position;
+	background-repeat: no-repeat;
+}
+
+@mixin media($media) {
+  @media screen and #{$media} {
+      @content;
+  }
+}
